@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Register</h1>
+        <form method="POST" action="">
+            <div class="form-group">
+                {{form.name(clas_="form-control")}}
+            </div>
+            <div class="form-group">
+                {{form.email(clas_="form-control")}}
+            </div>
+            <div class="form-group">
+                {{form.username(clas_="form-control")}}
+            </div>
+            <div class="form-group">
+                {{form.password(clas_="form-control")}}
+            </div>
+            <div class="form-group">
+                {{form.confirm(clas_="form-control")}}
+            </div>
+            <p><input type="submit" class="btn btn-primary" value="submit"></p>
+        </form>
+    </div>
+{% endblock %}
